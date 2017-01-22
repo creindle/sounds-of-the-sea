@@ -37,6 +37,8 @@ function create(){
   GameHero = new Player(game, 100, 150);
   SuperBadNet = new EnemyNet(game, 500, 100);
 
+  game.physics.enable(SuperBadNet, Phaser.Physics.ARCADE);
+
   spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
   spaceKey.onUp.add(useAbility);
 

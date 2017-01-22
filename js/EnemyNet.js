@@ -4,5 +4,6 @@ class EnemyNet extends GameCharacter {
     this.sprite.animations.add('moving', [3, 4, 5]);
     this.sprite.animations.play('moving', 5, true);
     this.sprite.scale.setTo(4,4);
+
   }
 }
